@@ -8,3 +8,65 @@ body {
     font-family: 'Public Sans', sans-serif;
     
 }
+
+
+.hambuger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-right: 1em;
+    display: none;
+}
+
+.hambuger span {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%)) 
+}
+
+.hambuger:hover {
+    opacity: 0.8;
+}
+
+.active {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    
+}
+.close {
+    display: none;
+}
+
+@media (max-width:480px){
+    
+    .hambuger{
+        display: none;
+    }
+    
+        .nav-list {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            background: hsl(220, 16%, 96%);
+        }
+    .close {
+        display: block;
+        position: fixed;
+        right: 1em;
+        top: 1em;
+        background: white;
+        margin: 1em;
+    }
+}
+
+

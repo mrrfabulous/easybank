@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easybank</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="input.css">
 </head>
 <body class="relative overflow-x-hidden">
     <nav class="shadow-sm shadow-limeGreen bg-White z-50 fixed" style="width: 100%; " >
        <div class="relative container py-4 mx-auto  bg-White w-full">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between relative">
             <div class="p-3 md:p-0" >
                 <img src="images/logo.svg" alt="" >
             </div>
-                <div class="hidden md:flex space-x-7 ">
+                <button class="hambuger ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            
+                <div class="nav-list space-x-7 ">
+                    <button class="close ">
+                        <img src="images/icon-close.svg" alt="">
+                    </button>
                     <a href="#" class="text-grayishBlue font-bold hover:text-[black]">Home</a>
                     <a href="#" class="text-grayishBlue font-bold hover:text-[black]">About</a>
                     <a href="#" class="text-grayishBlue font-bold hover:text-[black]">Contact</a>
                     <a href="#" class="text-grayishBlue font-bold hover:text-[black]">Blog</a>
                     <a href="#" class="text-grayishBlue font-bold hover:text-[black]">Careers</a>
                 </div>
-
+                
                 <button class="hidden font-bold md:block py-3 px-8 align-center bg-gradient-to-r from-limeGreen to-brightCyan hover:bg-gradient-to-l text-White rounded-full hover:opacity-75 hover:scale-95">Request Invite</button>
 
         </div>
@@ -38,7 +48,7 @@
         <div class="p-5 md:w-auto z-10 md:translate-x-40">
             <img src="images/image-mockups.png" alt="" class=" ">
         </div>
-        <img src="images/bg-intro-desktop.svg" alt="" class="absolute md:top-[-8em] md:right-[-15em] lg:right-[-25em]">
+        <img src="images/bg-intro-desktop.svg" alt="" class=" hidden md:block absolute md:top-[-8em] md:right-[-15em] lg:right-[-25em]">
     </section>
     
     <section class="bg-lightGrayishBlue py-0 mt-16 md:mt-0 md:translate-y-[-10em]">
@@ -169,6 +179,8 @@
     </div>
            
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 </html>
