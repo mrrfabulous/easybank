@@ -36,19 +36,29 @@ body {
 
 .nav-list {
     display: flex;
-    
+    transition: 1s;
 }
 .close {
     display: none;
 }
 
-@media (max-width:480px){
+.intro-mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:767.9px){
     
     .hambuger{
-        display: none;
+        display: flex;
     }
     
         .nav-list {
+            display: none;
             flex-direction: column;
             justify-content: space-around;
             align-items: start;
@@ -59,6 +69,10 @@ body {
             height: 100vh;
             background: hsl(220, 16%, 96%);
         }
+
+    .active {
+        display: flex;
+    }
     .close {
         display: block;
         position: fixed;
@@ -67,6 +81,18 @@ body {
         background: white;
         margin: 1em;
     }
+
+    .intro-mobile{
+        display: block;
+    }
+
+    #links .link2{
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    
 }
 
 
