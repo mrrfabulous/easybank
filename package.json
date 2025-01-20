@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "Practical work on tailwind",
   "main": "index.js",
-  "scripts": {  
-      "dev": "tailwindcss -i ./input.css -o ./css/main.css --watch",
-      "build": "tailwindcss -i ./input.css -o ./css/main.css --minify",
-      "start": "serve ."
-},  
+  "scripts": {
+    "build": "mkdir dist && tailwindcss -i ./input.css -o ./dist/css/main.css --minify && copyfiles -u 0 index.html main.js images/** dist/"
+  },
   "keywords": [],
   "author": "Joseph",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "tailwindcss": "^3.3.3"
   }
 }
