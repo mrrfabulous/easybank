@@ -1,7 +1,7 @@
 {
   "name": "easybank",
   "version": "1.0.0",
-  "description": "Practical work on tailwind" ,
+  "description": "Practical work on tailwind",
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./css/main.css",
